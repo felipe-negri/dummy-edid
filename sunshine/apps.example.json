@@ -1,0 +1,113 @@
+{
+    "env": {
+        "PATH": "$(PATH):$(HOME)/.local/bin",
+        "XDG_RUNTIME_DIR": "/run/user/1000",
+        "WAYLAND_DISPLAY": "wayland-0"
+    },
+    "apps": [
+        {
+            "name": "Desktop",
+            "image-path": "/usr/share/sunshine/desktop.png"
+        },
+        {
+            "name": "📱 S26 Ultra 3120x1440 @ 120fps",
+            "image-path": "/home/USER/.config/sunshine/covers/3120_1440_120.png",
+            "prep-cmd": [
+                {
+                    "do": "/home/USER/.local/bin/void-mode 3120x1440@120",
+                    "undo": "/home/USER/.local/bin/void-mode 1920x1080@60"
+                },
+                {
+                    "do": "setsid steam steam://open/bigpicture",
+                    "undo": "/home/USER/.local/bin/steam-close.sh"
+                }
+            ]
+        },
+        {
+            "name": "📱 S26 Ultra 2340x1080 @ 120fps",
+            "image-path": "/home/USER/.config/sunshine/covers/2340_1080_120.png",
+            "prep-cmd": [
+                {
+                    "do": "/home/USER/.local/bin/void-mode 2340x1080@120",
+                    "undo": "/home/USER/.local/bin/void-mode 1920x1080@60"
+                },
+                {
+                    "do": "setsid steam steam://open/bigpicture",
+                    "undo": "/home/USER/.local/bin/steam-close.sh"
+                }
+            ]
+        },
+        {
+            "name": "📱 S26 Ultra 1560x720 @ 120fps",
+            "image-path": "/home/USER/.config/sunshine/covers/1560_720_120.png",
+            "prep-cmd": [
+                {
+                    "do": "/home/USER/.local/bin/void-mode 1560x720@120",
+                    "undo": "/home/USER/.local/bin/void-mode 1920x1080@60"
+                },
+                {
+                    "do": "setsid steam steam://open/bigpicture",
+                    "undo": "/home/USER/.local/bin/steam-close.sh"
+                }
+            ]
+        },
+        {
+            "name": "📱 Tab S9 Ultra 2960x1848 @ 90fps",
+            "image-path": "/home/USER/.config/sunshine/covers/2960_1848_90.png",
+            "prep-cmd": [
+                {
+                    "do": "/home/USER/.local/bin/void-mode 2960x1848@90",
+                    "undo": "/home/USER/.local/bin/void-mode 1920x1080@60"
+                },
+                {
+                    "do": "setsid steam steam://open/bigpicture",
+                    "undo": "/home/USER/.local/bin/steam-close.sh"
+                }
+            ]
+        },
+        {
+            "name": "📱 Tab S9 Ultra 2560x1600 @ 120fps",
+            "image-path": "/home/USER/.config/sunshine/covers/2560_1600_120.png",
+            "prep-cmd": [
+                {
+                    "do": "/home/USER/.local/bin/void-mode 2560x1600@120",
+                    "undo": "/home/USER/.local/bin/void-mode 1920x1080@60"
+                },
+                {
+                    "do": "setsid steam steam://open/bigpicture",
+                    "undo": "/home/USER/.local/bin/steam-close.sh"
+                }
+            ]
+        },
+        {
+            "name": "🖥 3840x2160 @ 30fps",
+            "image-path": "/home/USER/.config/sunshine/covers/3840_2160_30.png",
+            "prep-cmd": [
+                {
+                    "do": "/home/USER/.local/bin/void-mode 3840x2160@30",
+                    "undo": "/home/USER/.local/bin/void-mode 1920x1080@60"
+                }
+            ]
+        },
+        {
+            "name": "🖥 1920x1080 @ 120fps",
+            "image-path": "/usr/share/sunshine/1920_1080_120.png",
+            "prep-cmd": [
+                {
+                    "do": "/home/USER/.local/bin/void-mode 1920x1080@120",
+                    "undo": "/home/USER/.local/bin/void-mode 1920x1080@60"
+                }
+            ]
+        },
+        {
+            "name": "🖥 1920x1080 @ 60fps",
+            "image-path": "/usr/share/sunshine/1920_1080_60.png",
+            "prep-cmd": [
+                {
+                    "do": "/home/USER/.local/bin/void-mode 1920x1080@60",
+                    "undo": "/home/USER/.local/bin/void-mode 1920x1080@60"
+                }
+            ]
+        }
+    ]
+}
