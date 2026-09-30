@@ -123,3 +123,7 @@ mais próxima, e aplica pelo id.
 - Hardware usado: dummy HDMI "Xieoery S06" (EDID de fábrica: fabricante XMD, 3440x1440 máx.).
   Outros dummies podem ter a EEPROM protegida contra escrita; o `write_eeprom.py` detecta
   isso na conferência e aborta com "DIVERGE!".
+
+## Licença
+
+[MIT](LICENSE). Gravar a EEPROM do dummy é por sua conta: guarde o backup do EDID de fábrica antes.
